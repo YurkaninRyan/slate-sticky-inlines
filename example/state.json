@@ -71,6 +71,78 @@
           ]
         }
       ]
+    },
+   {
+      "kind": "block",
+      "type": "paragraph",
+      "nodes": [
+        {
+          "kind": "text",
+          "ranges": [
+            {
+              "text": "This next link has no sticky inline without sticky boundaries "
+            }
+          ]
+        },
+        {
+          "kind": "inline",
+          "type": "no-sticky-boundary-link",
+          "nodes": [
+            {
+              "kind": "text",
+              "ranges": [
+                {
+                  "text": "It's possible to get on either edge, but the arrow key doesn't always need a double tap to do it"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "ranges": [
+            {
+              "text": " Instead it only depends on which direction you are coming from!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "block",
+      "type": "paragraph",
+      "nodes": [
+        {
+          "kind": "text",
+          "ranges": [
+            {
+              "text": "By default, you can delete all the text inside of a sticky inline, and continue to type inside it (unless you press backspace again in an empty inline) "
+            }
+          ]
+        },
+        {
+          "kind": "inline",
+          "type": "cant-be-empty-link",
+          "nodes": [
+            {
+              "kind": "text",
+              "ranges": [
+                {
+                  "text": "This inline dissappears after being deleted however, unlike the other sticky inlines"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "ranges": [
+            {
+              "text": " if it could be empty however, it also would automagically delete itself if it was in it's pseudo-empty state but it wasn't focused!"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

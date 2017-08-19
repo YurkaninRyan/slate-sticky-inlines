@@ -24,6 +24,8 @@ const plugins = [
   StickyInlines({
     allowedTypes: ['link'],
     bannedTypes: ['file'],
+    canBeEmpty: true,
+    hasStickyBoundaries: true,
   })
 ]
 ```
@@ -31,7 +33,8 @@ const plugins = [
 #### Arguments
 - `allowedTypes [:String]` — An array of specific `Inline Types` that should be sticky.  Defaults to allowing all types to be sticky.
 - `bannedTypes [:String]` — An array of specific `Inline Types` that shouldnt be sticky.  Defaults to an empty `Array`.
-
+- `canBeEmpty Boolean` — Controls whether or not you need to delete twice to get rid of a sticky inline.  Defaults to `True`.
+- `hasStickyBoundaries Boolean` — Controls whether or not an extra step is introduced at the boundaries of sticky inlines, which allows you to switch the bounds you are in without moving the text caret.  Defaults to `True`.
 
 ## Development
 
