@@ -11,13 +11,18 @@ const schema = {
       const focused = props.state.isFocused && props.state.selection.hasEdgeIn(props.node)
       const className = focused ? "focused" : ""
       return <a className={className} href="/" {...props.attributes}>{props.children}</a>
+    },
+    banned: (props) => {
+      const focused = props.state.isFocused && props.state.selection.hasEdgeIn(props.node)
+      const className = focused ? "focused banned" : "banned"
+      return <a className={className} href="/" {...props.attributes}>{props.children}</a>
     }
   }
 }
 
 class Example extends React.Component {
   plugins = [
-    StickyInlines({})
+    StickyInlines({ bannedTypes: ["banned"] })
   ];
 
   state = {

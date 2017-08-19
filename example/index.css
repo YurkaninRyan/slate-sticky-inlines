@@ -16,9 +16,21 @@ main {
   padding: 20px;
 }
 
+main div:not(:last-child) {
+  margin-bottom: 24px;
+}
+
 a {
   background-color: transparent;
   transition: background-color 0.15s;
+}
+
+.banned {
+  color: red;
+}
+
+.banned.focused {
+  background-color: #F8E8EA;
 }
 
 .focused {
