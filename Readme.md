@@ -6,7 +6,7 @@ A Slate plugin that makes it possible to edit the edges of Inlines.
 
 ## Demo
 
-http://ryanyurkanin.in/slate-sticky-inlines
+http://ryanyurkan.in/slate-sticky-inlines
 
 
 ## Install
