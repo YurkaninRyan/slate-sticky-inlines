@@ -1,0 +1,26 @@
+html {
+  background: #eee;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+  padding: 50px;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  background: #fff;
+  margin: 0 auto;
+  max-width: 42em;
+  padding: 20px;
+}
+
+a {
+  background-color: transparent;
+  transition: background-color 0.15s;
+}
+
+.focused {
+  background-color: #e0ecff;
+}
