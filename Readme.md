@@ -6,7 +6,7 @@ A Slate plugin that makes it possible to edit the edges of Inlines.
 
 ## Demo
 
-https://yurkaninryan.github.io/slate-sticky-inlines/
+http://ryanyurkanin.in/slate-sticky-inlines
 
 
 ## Install
@@ -18,7 +18,7 @@ npm install slate-sticky-inlines
 ## Usage
 
 ```js
-import StickyInlines from 'slate-drop-or-paste-images'
+import StickyInlines from 'slate-sticky-inlines'
 
 const plugins = [
   StickyInlines({
