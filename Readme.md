@@ -26,6 +26,7 @@ const plugins = [
     bannedTypes: ['file'],
     canBeEmpty: true,
     hasStickyBoundaries: true,
+    stickOnDelete: true,
   })
 ]
 ```
@@ -35,6 +36,7 @@ const plugins = [
 - `bannedTypes [:String]` — An array of specific `Inline Types` that shouldnt be sticky.  Defaults to an empty `Array`.
 - `canBeEmpty Boolean` — Controls whether or not you need to delete twice to get rid of a sticky inline.  Defaults to `True`.
 - `hasStickyBoundaries Boolean` — Controls whether or not an extra step is introduced at the boundaries of sticky inlines, which allows you to switch the bounds you are in without moving the text caret.  Defaults to `True`.
+- `stickOnDelete Boolean` — Controls whether on not deleting 'into' a sticky inline should cause the caret to cross over and be inside the sticky inline.  Defaults to `True`.
 
 ## Development
 

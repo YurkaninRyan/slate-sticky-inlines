@@ -143,6 +143,42 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "block",
+      "type": "paragraph",
+      "nodes": [
+        {
+          "kind": "text",
+          "ranges": [
+            {
+              "text": "By default, if you delete 'into' a sticky inline, the cursor jumps into the inline "
+            }
+          ]
+        },
+        {
+          "kind": "inline",
+          "type": "doesnt-stick-on-delete-link",
+          "nodes": [
+            {
+              "kind": "text",
+              "ranges": [
+                {
+                  "text": "This inline just keeps the cursor on the outside"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "ranges": [
+            {
+              "text": " whatever your preference is!"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
