@@ -8,27 +8,27 @@ import { Editor, Raw } from 'slate'
 const schema = {
   nodes: {
     link: (props) => {
-      const focused = props.state.isFocused && props.state.selection.hasEdgeIn(props.node)
+      const focused = props.state.isFocused && props.state.inlines.includes(props.node)
       const className = focused ? "focused" : ""
       return <a className={className} href="/" {...props.attributes}>{props.children}</a>
     },
     "no-sticky-boundary-link": (props) => {
-      const focused = props.state.isFocused && props.state.selection.hasEdgeIn(props.node)
+      const focused = props.state.isFocused && props.state.inlines.includes(props.node)
       const className = focused ? "focused" : ""
       return <a className={className} href="/" {...props.attributes}>{props.children}</a>
     },
     "cant-be-empty-link": (props) => {
-      const focused = props.state.isFocused && props.state.selection.hasEdgeIn(props.node)
+      const focused = props.state.isFocused && props.state.inlines.includes(props.node)
       const className = focused ? "focused" : ""
       return <a className={className} href="/" {...props.attributes}>{props.children}</a>
     },
     "doesnt-stick-on-delete-link": (props) => {
-      const focused = props.state.isFocused && props.state.selection.hasEdgeIn(props.node)
+      const focused = props.state.isFocused && props.state.inlines.includes(props.node)
       const className = focused ? "focused" : ""
       return <a className={className} href="/" {...props.attributes}>{props.children}</a>
     },
     banned: (props) => {
-      const focused = props.state.isFocused && props.state.selection.hasEdgeIn(props.node)
+      const focused = props.state.isFocused && props.state.inlines.includes(props.node)
       const className = focused ? "focused banned" : "banned"
       return <a className={className} href="/" {...props.attributes}>{props.children}</a>
     }
@@ -47,7 +47,7 @@ class Example extends React.Component {
     state: Raw.deserialize(initialState, { terse: true })
   };
 
-  onChange = (state) => {
+  onChange = ({ state }) => {
     this.setState({ state })
   }
 
