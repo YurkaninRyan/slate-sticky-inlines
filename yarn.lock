@@ -3376,9 +3376,9 @@ slash@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
 
-"slate@https://github.com/YurkaninRyan/slate.git#dist":
-  version "0.22.8"
-  resolved "https://github.com/YurkaninRyan/slate.git#c8ab82a83324cd097295845bf67e9faa21235665"
+slate@^0.22.9:
+  version "0.22.9"
+  resolved "https://registry.yarnpkg.com/slate/-/slate-0.22.9.tgz#c8582a7a5dfc4f84cb8a56fa982d71e83066dd36"
   dependencies:
     debug "^2.3.2"
     direction "^0.1.5"
