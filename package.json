@@ -22,7 +22,9 @@
   ],
   "author": "Ryan Yurkanin [me@ryanyurkan.in]",
   "license": "MIT",
-  "peerDependencies": {},
+  "peerDependencies": {
+    "slate": "https://github.com/YurkaninRyan/slate.git#dist"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^7.2.3",
@@ -39,7 +41,7 @@
     "npm-run-all": "^4.0.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "slate": "^0.22.2",
     "watchify": "^3.9.0"
-  }
+  },
+  "dependencies": {}
 }
