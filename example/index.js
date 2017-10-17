@@ -1,9 +1,11 @@
 
+import immutable from 'immutable'
 import StickyInlines from '..'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import initialState from './state.json'
-import { Editor, Raw } from 'slate'
+import initialState from './state'
+import { State } from 'slate'
+import { Editor } from 'slate-react'
 
 const schema = {
   nodes: {
@@ -44,7 +46,7 @@ class Example extends React.Component {
   ];
 
   state = {
-    state: Raw.deserialize(initialState, { terse: true })
+    state: State.fromJSON(initialState)
   };
 
   onChange = ({ state }) => {
