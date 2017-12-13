@@ -1,6 +1,6 @@
 {
   "name": "slate-sticky-inlines",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "A Slate plugin that makes it possible to edit the edges of Inlines",
   "repository": "https://github.com/YurkaninRyan/slate-sticky-inlines",
   "main": "./dist/index.js",
@@ -23,8 +23,7 @@
   "author": "Ryan Yurkanin [me@ryanyurkan.in]",
   "license": "MIT",
   "peerDependencies": {
-    "immutable": "^3.8.2",
-    "slate": "^0.27.2"
+    "immutable": "^3.8.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -41,12 +40,13 @@
     "http-server": "^0.10.0",
     "immutable": "^3.8.2",
     "npm-run-all": "^4.0.2",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "slate": "^0.27.2",
-    "slate-hyperscript": "^0.2.2",
-    "slate-react": "^0.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "slate": "^0.31.7",
+    "slate-hyperscript": "^0.4.15",
     "watchify": "^3.9.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "slate-react": "^0.10.22"
+  }
 }
