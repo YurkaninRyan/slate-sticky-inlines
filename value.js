@@ -3,7 +3,7 @@
 import h from 'slate-hyperscript'
 
 export default (
-  <state>
+  <value>
     <document>
       <block type="paragraph">
         <text>Try editing on the edges of the link </text>
@@ -23,7 +23,7 @@ export default (
       <block type="paragraph">
         <text>By default, you can delete all the text inside of a sticky inline, and continue to type inside it (unless you press backspace again in an empty inline) </text>
         <inline type="cant-be-empty-link">This inline dissappears after being deleted however, unlike the other sticky inlines</inline>
-        <text> if it could be empty however, it also would automagically delete itself if it was in it's pseudo-empty state but it wasn't focused!</text>
+        <text> if it could be empty however, it also would automagically delete itself if it was in it's pseudo-empty value but it wasn't focused!</text>
       </block>
       <block type="paragraph">
         <text>By default, if you delete 'into' a sticky inline, the cursor jumps into the inline </text>
@@ -31,5 +31,5 @@ export default (
         <text> whatever your preference is!</text>
       </block>
     </document>
-  </state>
+  </value>
 )
