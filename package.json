@@ -11,6 +11,7 @@
     "gh-pages": "npm run dist && npm run example && gh-pages --dist ./example",
     "lint": "eslint 'lib/**/*.js' 'example/index.js'",
     "prepublish": "npm run dist",
+    "prettier": "prettier --write '{,*,lib,example}/*.{js,jsx,css,md,json}'",
     "start": "http-server ./example -p 8888",
     "test": "npm run lint",
     "watch": "npm-run-all --parallel --print-label watch:dist watch:example start",
@@ -35,10 +36,14 @@
     "eslint-plugin-react": "^7.2.1",
     "gh-pages": "^1.0.0",
     "http-server": "^0.10.0",
+    "immutable": "^3.8.2",
     "npm-run-all": "^4.0.2",
+    "prettier": "^1.14.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "slate": "^0.42.0",
     "slate-hyperscript": "^0.5.1",
+    "slate-react": "^0.19.0",
     "watchify": "^3.9.0"
   },
   "peerDependencies": {
