@@ -44,10 +44,10 @@ Clone the repository and then run:
 
 ```
 npm install
-npm watch
+npm run watch
 ```
 
-And open the example page in your browser:
+And open the [example page](http://localhost:8888) in your browser:
 
 ```
 http://localhost:8888/
