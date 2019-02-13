@@ -111,7 +111,6 @@
     "react/sort-prop-types": "error",
     "react/jsx-wrap-multilines": "error",
     "rest-spread-spacing": ["error", "never"],
-    "semi": ["error", "never"],
     "space-before-blocks": "error",
     "space-before-function-paren": ["error", { "anonymous": "always", "named": "never" }],
     "space-in-parens": "error",
