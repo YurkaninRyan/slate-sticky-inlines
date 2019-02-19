@@ -11,6 +11,7 @@
     "gh-pages": "npm run dist && npm run example && gh-pages --dist ./example",
     "lint": "eslint 'lib/**/*.js' 'example/index.js'",
     "prepublish": "npm run dist",
+    "prettier": "prettier --write '{,*,lib,example}/*.{js,jsx,css,md,json}'",
     "start": "http-server ./example -p 8888",
     "test": "npm run lint",
     "watch": "npm-run-all --parallel --print-label watch:dist watch:example start",
@@ -22,9 +23,6 @@
   ],
   "author": "Ryan Yurkanin [me@ryanyurkan.in]",
   "license": "MIT",
-  "peerDependencies": {
-    "immutable": "^3.8.2"
-  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^7.2.3",
@@ -40,13 +38,20 @@
     "http-server": "^0.10.0",
     "immutable": "^3.8.2",
     "npm-run-all": "^4.0.2",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "slate": "^0.32.1",
-    "slate-hyperscript": "^0.5.1",
+    "prettier": "^1.14.3",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "slate": "^0.44.0",
+    "slate-hyperscript": "^0.11.0",
+    "slate-react": "^0.21.0",
     "watchify": "^3.9.0"
   },
-  "dependencies": {
-    "slate-react": "^0.11.1"
-  }
+  "peerDependencies": {
+    "immutable": "^3.8.2",
+    "slate": "^0.44.0",
+    "slate-react": "^0.21.0"
+  },
+	"resolutions": {
+		"slate-react": "^0.21.0"
+	}
 }
